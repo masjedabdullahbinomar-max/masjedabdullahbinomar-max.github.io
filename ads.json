@@ -1,15 +1,62 @@
 {
- "v": 1,
- "updated": "2026-09-16T15:41:51.497Z",
+ "v": 2,
+ "updated": "2026-09-16T21:01:05.840Z",
  "ads": {
-  "onlyAds": true,
-  "items": [
-   {
-    "text": "محاضرة دينية",
-    "from": "2026-09-16",
-    "to": "2026-09-17",
-    "on": true
+  "onlyAds": false,
+  "items": []
+ },
+ "times": {
+  "adj": {
+   "fajr": {
+    "mode": "offset",
+    "v": 0
+   },
+   "sunrise": {
+    "mode": "offset",
+    "v": 0
+   },
+   "dhuhr": {
+    "mode": "offset",
+    "v": 5
+   },
+   "asr": {
+    "mode": "offset",
+    "v": 6
+   },
+   "maghrib": {
+    "mode": "offset",
+    "v": 5
+   },
+   "isha": {
+    "mode": "offset",
+    "v": 1
    }
-  ]
+  },
+  "iqama": {
+   "fajr": {
+    "mode": "offset",
+    "v": 25
+   },
+   "dhuhr": {
+    "mode": "offset",
+    "v": 25
+   },
+   "asr": {
+    "mode": "fixed",
+    "v": "16:20"
+   },
+   "maghrib": {
+    "mode": "offset",
+    "v": 9
+   },
+   "isha": {
+    "mode": "offset",
+    "v": 23
+   },
+   "jumua": {
+    "mode": "offset",
+    "v": 30
+   }
+  }
  }
 }
