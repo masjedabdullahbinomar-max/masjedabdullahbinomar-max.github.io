@@ -521,6 +521,7 @@ body.photo-contain #hint{top:auto;bottom:calc(var(--m)*2 + var(--u)*9)}
 /* ===== تحسين العرض العمودي للجوال والتابلت (v2) — يعالج الفراغات ويطابق التصميم المرجعي ===== */
 #wxGrid{display:none}
 .duaBody{display:contents}
+.duaMeta{display:contents}
 .duaIco{display:none}
 body.portrait{
   --px:clamp(10px,3.5vw,20px);
@@ -638,9 +639,9 @@ body.portrait #ui #dua{flex:none;margin-top:0;min-height:0;justify-content:cente
 body.portrait #ui #dua,body.portrait #ui #dua.ad{box-shadow:0 18px 40px -26px rgba(0,0,0,.7),inset 0 0 0 3px rgba(9,21,40,.95),inset 0 0 0 4px rgba(212,175,55,.42)}
 body.portrait #ui #dua.ad{border-color:rgba(212,175,55,.75)}
 body.portrait #ui #dua::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:var(--orn-l) left 7px center/auto 72% no-repeat,var(--orn-r) right 7px center/auto 72% no-repeat}
-body.portrait #ui #dua .duaBody{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1 1 auto;min-width:0;gap:.05em}
+body.portrait #ui #dua .duaMeta{display:flex;flex-direction:row;align-items:center;flex:none;min-width:0;gap:.4em}
 body.portrait #ui #duaTxt{width:100%;font-size:var(--t-dua);line-height:1.7}
-body.portrait #ui #duaTxt.marq{flex:none;height:1.72em;line-height:1.72em}
+body.portrait #ui #duaTxt.marq{flex:1 1 auto;height:1.72em;line-height:1.72em}
 body.portrait #ui #duaSrc{font-size:var(--t-src);line-height:1.3}
 body.portrait #ui #dua.ad #duaSrc::before{content:none}
 body.portrait #ui #dua .duaIco{display:grid;place-items:center;flex:none;width:var(--dua-ico);height:var(--dua-ico);color:var(--lamp);filter:drop-shadow(0 0 8px rgba(237,190,104,.25))}
@@ -666,7 +667,6 @@ html[dir=ltr] body.portrait #ui #dua .duaIco .ih{transform:scaleX(-1)}
   body.portrait #ui #next .nr{flex-direction:row;align-items:baseline;gap:.55em;margin-top:0}
   body.portrait #ui #stageWx{padding-block:3px}
   body.portrait #ui .wxt small{display:none}
-  body.portrait #ui #dua .duaBody{flex-direction:row;gap:.7em}
   body.portrait #ui #duaTxt.marq{flex:1 1 auto;width:auto}
   body.portrait #ui #dua{padding-block:clamp(4px,.8vh,8px)}
 }
@@ -874,7 +874,7 @@ body.ss-min .ss-panel>*:not(.ss-h):not(.ss-hero){display:none}
       <div class="cols" aria-hidden="true"><span data-i="prayer"></span><span data-i="adhan"></span><span data-i="iqama"></span></div>
       <ol id="rows"></ol>
     </section>
-    <div id="dua" class="glass ifrm" aria-live="polite"><span class="duaBody"><span id="duaTxt"></span><span id="duaSrc"></span></span><i class="duaIco" aria-hidden="true"><svg class="ib" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M11 7.5h24.5a2.5 2.5 0 0 1 2.5 2.5v23.5H14a3 3 0 0 0-3 3z"/><path d="M11 36.5a3.5 3.5 0 0 0 3.5 3.5H38v-6.5"/><path d="M15.5 36.8H38"/><path d="M19.5 15.5h11v11h-11z"/><path d="M25 12.7l7.8 8.3L25 29.3 17.2 21z"/><circle cx="25" cy="21" r="1.6"/></svg><svg class="ih" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20.5v7a2 2 0 0 0 2 2h5.5L30 37.5v-27L14.5 18.5H9a2 2 0 0 0-2 2z"/><path d="M14.5 29.5 17.5 38h4.5l-2.6-7.4"/><path d="M35 19a7 7 0 0 1 0 10M39 15a12.5 12.5 0 0 1 0 18"/></svg></i></div>
+    <div id="dua" class="glass ifrm" aria-live="polite"><span id="duaTxt"></span><span class="duaMeta"><i class="duaIco" aria-hidden="true"><svg class="ib" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M11 7.5h24.5a2.5 2.5 0 0 1 2.5 2.5v23.5H14a3 3 0 0 0-3 3z"/><path d="M11 36.5a3.5 3.5 0 0 0 3.5 3.5H38v-6.5"/><path d="M15.5 36.8H38"/><path d="M19.5 15.5h11v11h-11z"/><path d="M25 12.7l7.8 8.3L25 29.3 17.2 21z"/><circle cx="25" cy="21" r="1.6"/></svg><svg class="ih" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20.5v7a2 2 0 0 0 2 2h5.5L30 37.5v-27L14.5 18.5H9a2 2 0 0 0-2 2z"/><path d="M14.5 29.5 17.5 38h4.5l-2.6-7.4"/><path d="M35 19a7 7 0 0 1 0 10M39 15a12.5 12.5 0 0 1 0 18"/></svg></i><span id="duaSrc"></span></span></div>
   </div>
 
   <section id="dash" aria-label="Dashboard">
@@ -1020,7 +1020,7 @@ body.ss-min .ss-panel>*:not(.ss-h):not(.ss-hero){display:none}
           </div>
           <h4 data-i="sAdj"></h4>
           <p class="hint" data-i="hAdj"></p>
-          <div class="grid" id="adjGrid"></div>
+          <table class="iqt"><thead><tr><th data-i="prayer"></th><th data-i="mode"></th><th data-i="value"></th><th data-i="today"></th></tr></thead><tbody id="adjBody"></tbody></table>
           <div class="preview" id="calcPrev"></div>
         </section>
 
@@ -1406,7 +1406,7 @@ function closeDash(){DASH.open=false;document.body.classList.remove('dash');$('#
    ===================================================================== */
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const clone=o=>JSON.parse(JSON.stringify(o));
-const KEY='ibnomar.prayer.v1', GOOD='ibnomar.prayer.lastgood', CAL_VERSION=13;
+const KEY='ibnomar.prayer.v1', GOOD='ibnomar.prayer.lastgood', CAL_VERSION=14;
 const PRAYERS=['fajr','dhuhr','asr','maghrib','isha'];
 const EVENTS=['fajr','sunrise','dhuhr','asr','maghrib','isha'];
 const REF={w:1447,h:1087}; // أبعاد الصورة المرجعية للمسجد
@@ -1415,7 +1415,7 @@ const DEF_LOC={lat:+PT.dms(23,14,7.41).toFixed(6), lng:+PT.dms(56,31,0.93).toFix
 const DEFAULTS={
   mosque:{nameAr:'مسجد عبدالله بن عمر رضي الله عنهما',cityAr:'ولاية عبري',nameEn:'Abdullah bin Omar Mosque',cityEn:'Ibri, Oman'},
   loc:{lat:DEF_LOC.lat,lng:DEF_LOC.lng,tz:4,elev:0},
-  calc:{method:'oman',asr:1,fajrAngle:18,ishaAngle:18,ishaMin:0,adj:{fajr:0,sunrise:0,dhuhr:5,asr:6,maghrib:5,isha:1}},
+  calc:{method:'oman',asr:1,fajrAngle:18,ishaAngle:18,ishaMin:0,adj:{fajr:{mode:'offset',v:0},sunrise:{mode:'offset',v:0},dhuhr:{mode:'offset',v:5},asr:{mode:'offset',v:6},maghrib:{mode:'offset',v:5},isha:{mode:'offset',v:1}}},
   iqama:{fajr:{mode:'offset',v:25},dhuhr:{mode:'offset',v:25},asr:{mode:'fixed',v:'16:20'},maghrib:{mode:'offset',v:9},isha:{mode:'offset',v:23},jumua:{mode:'offset',v:30}},
   dur:{adhan:4,fajr:12,dhuhr:10,asr:10,maghrib:8,isha:10,jumua:15},
   alerts:{preMin:5,chime:true,adhan:true,iqamaChime:true,sysNotify:true,volume:.85,muted:false,nature:false,natureVol:.4},
@@ -1451,7 +1451,7 @@ const I18N={
   fFajrA:'زاوية الفجر °',fIshaA:'زاوية العشاء °',fIshaM:'العشاء بعد المغرب (دقيقة، 0 = بالزاوية)',
   sAdj:'تعديل يدوي بالدقائق',hAdj:'لمطابقة ساعة المسجد أو تقويم الوزارة تماماً: أضف أو اطرح دقائق لكل وقت.',
   sIqama:'أوقات الإقامة',hIqama:'«بعد الأذان» تُحسب بالدقائق من وقت الأذان، و«وقت ثابت» يبقى كما هو يومياً. الإقامة الثابتة الأبكر من الأذان تُستبدل تلقائياً بـ 10 دقائق بعده.',
-  mode:'النوع',value:'القيمة',mOffset:'بعد الأذان (دقيقة)',mFixed:'وقت ثابت',
+  mode:'النوع',value:'القيمة',mOffset:'بعد الأذان (دقيقة)',mCalc:'حسب الحساب الفلكي (± دقيقة)',mFixed:'وقت ثابت',
   sDur:'مدد الشاشات',hDur:'مدة شاشة الأذان، ومدة الشاشة الخافتة بعد الإقامة لكل صلاة (بالدقائق).',
   sAlerts:'التنبيهات',fPre:'التنبيه قبل الأذان (دقيقة)',fVol:'مستوى الصوت',cChime:'نغمة تنبيه قبل الأذان',cAdhan:'تشغيل الأذان عند دخول الوقت',cIqChime:'نغمة عند الإقامة',cSys:'إشعارات النظام (عند السماح بها)',
   cNature:'أصوات طبيعية محيطة (نسيم وعصافير خفيفة)',fNatVol:'مستوى صوت الطبيعة',
@@ -1469,7 +1469,7 @@ const I18N={
   imported:'تم استيراد الإعدادات — راجعها ثم احفظ',badFile:'الملف غير صالح',
   sOwner:'قسم المالك',bOwnerUnlock:'فتح بصلاحية المالك',
   dashMonth:'جدول مواقيت الشهر',mtDay:'اليوم',mtHijri:'هجري',
-  adsPubBadTok:'الرمز الملصوق غير مكتمل أو غير صحيح الصيغة — يجب أن يبدأ بـ github_pat_ وينسخ كاملاً بلا نقص',adsPubLocalFile:'النشر لا يعمل أثناء فتح الملف مباشرة من جهازك (كما في هذه الشاشة) — افتح رابط الموقع المنشور على الإنترنت وجرّب النشر من هناك',sPublish:'نشر الإعلانات لكل الشاشات (GitHub)',hPublish:'لتظهر الإعلانات التي تكتبها هنا على كل الأجهزة التي تفتح الرابط، يرفع البرنامج ملفاً صغيراً باسم ads.json إلى نفس مستودع GitHub تلقائياً. أدخل اسم المستودع ورمز وصول (Token) مرة واحدة من هذا الجهاز فقط.',fGhRepo:'المستودع (owner/repo)',fGhToken:'رمز الوصول (Fine-grained token — صلاحية Contents: Read and write)',hGhToken:'يُحفظ الرمز على هذا الجهاز فقط ولا يُنشر. أنشئه من GitHub: Settings → Developer settings → Personal access tokens → Fine-grained → اختر هذا المستودع فقط وصلاحية Contents: Read and write.',sAdsSync:'المزامنة مع كل الشاشات',hAdsSync:'عند الحفظ يُنشر ملف الإعلانات تلقائياً إن كان رمز الوصول مضبوطاً، وتلتقطه كل الشاشات المفتوحة على الرابط خلال دقائق. أو انسخ الملف وارفعه يدوياً باسم ads.json إلى المستودع.',bAdsPublish:'نشر الإعلانات الآن',bAdsCopy:'نسخ ملف ads.json',adsPubOk:'تم نشر الإعلانات — ستظهر على كل الشاشات خلال دقائق',adsPubErr:'تعذّر النشر: ',adsPubNoToken:'أدخل المستودع ورمز الوصول في تبويب «المالك» أولاً، أو انسخ الملف وارفعه يدوياً',adsCopied:'تم نسخ محتوى ads.json — ارفعه إلى المستودع بنفس الاسم',adsRemoteOn:'الإعلانات المعروضة الآن مأخوذة من الملف المنشور (آخر مزامنة: {t})',adsRemoteOff:'لم يُعثر على ملف إعلانات منشور — تُعرض الإعلانات المحفوظة على هذا الجهاز',
+  adsPubBadTok:'الرمز الملصوق غير مكتمل أو غير صحيح الصيغة — يجب أن يبدأ بـ github_pat_ وينسخ كاملاً بلا نقص',adsPubLocalFile:'النشر لا يعمل أثناء فتح الملف مباشرة من جهازك (كما في هذه الشاشة) — افتح رابط الموقع المنشور على الإنترنت وجرّب النشر من هناك',sPublish:'نشر الإعدادات والإعلانات لكل الشاشات (GitHub)',hPublish:'لتظهر التعديلات اليدوية على أوقات الأذان والإقامة والإعلانات التي تكتبها هنا على كل الأجهزة التي تفتح الرابط، يرفع البرنامج ملفاً صغيراً باسم ads.json إلى نفس مستودع GitHub تلقائياً. أدخل اسم المستودع ورمز وصول (Token) مرة واحدة من هذا الجهاز فقط.',fGhRepo:'المستودع (owner/repo)',fGhToken:'رمز الوصول (Fine-grained token — صلاحية Contents: Read and write)',hGhToken:'يُحفظ الرمز على هذا الجهاز فقط ولا يُنشر. أنشئه من GitHub: Settings → Developer settings → Personal access tokens → Fine-grained → اختر هذا المستودع فقط وصلاحية Contents: Read and write.',sAdsSync:'المزامنة مع كل الشاشات',hAdsSync:'عند الحفظ يُنشر ملف يضم أوقات الأذان/الإقامة اليدوية والإعلانات تلقائياً إن كان رمز الوصول مضبوطاً، وتلتقطه كل الشاشات المفتوحة على الرابط خلال دقائق. أو انسخ الملف وارفعه يدوياً باسم ads.json إلى المستودع.',bAdsPublish:'نشر التحديثات الآن',bAdsCopy:'نسخ ملف ads.json',adsPubOk:'تم النشر — ستظهر التحديثات على كل الشاشات خلال دقائق',adsPubErr:'تعذّر النشر: ',adsPubNoToken:'أدخل المستودع ورمز الوصول في تبويب «المالك» أولاً، أو انسخ الملف وارفعه يدوياً',adsCopied:'تم نسخ محتوى ads.json — ارفعه إلى المستودع بنفس الاسم',adsRemoteOn:'المعروض الآن (الأوقات اليدوية والإعلانات) مأخوذ من الملف المنشور (آخر مزامنة: {t})',adsRemoteOff:'لم يُعثر على ملف منشور — تُعرض الإعدادات المحفوظة على هذا الجهاز',
   tAds:'الإعلانات',sAds:'إعلانات المسجد',hAds:'أضف إعلانات عن أنشطة المسجد (محاضرة، حلقة قرآن، صلاة جنازة، تبرعات…). تظهر بالتناوب مع الأدعية في الشريط السفلي، ويمكن تحديد فترة زمنية لكل إعلان.',cAdsOnly:'عرض الإعلانات فقط (إخفاء الأدعية أثناء وجود إعلانات فعّالة)',sAdNew:'إعلان جديد',fAdText:'نص الإعلان',fAdFrom:'يبدأ من (اختياري)',fAdTo:'ينتهي في (اختياري)',bAdAdd:'إضافة الإعلان',adLabel:'إعلان',adsEmpty:'لا توجد إعلانات بعد.',dashAds:'الإعلانات',adOn:'مفعّل',bAdDel:'حذف',adExpired:'منتهٍ',adUpcoming:'لاحقاً',
   
   sWeather:'حالة الطقس',hWeather:'عند التفعيل، يتصل النظام بخدمة طقس مجانية (Open-Meteo) كل 20 دقيقة حسب إحداثيات المسجد، ويُحاكي الغيوم والمطر والضباب والرياح في المشهد. يعمل المشهد بوضعه المعتاد دون إنترنت.',
@@ -1515,7 +1515,7 @@ const I18N={
   fFajrA:'Fajr angle °',fIshaA:'Isha angle °',fIshaM:'Isha after Maghrib (min, 0 = angle)',
   sAdj:'Manual adjustments (minutes)',hAdj:'To match the mosque clock or the ministry calendar exactly, add or subtract minutes per time.',
   sIqama:'Iqama times',hIqama:'“After adhan” counts minutes from the adhan; “Fixed time” stays the same daily. A fixed iqama earlier than the adhan falls back to 10 minutes after it.',
-  mode:'Type',value:'Value',mOffset:'After adhan (min)',mFixed:'Fixed time',
+  mode:'Type',value:'Value',mOffset:'After adhan (min)',mCalc:'From calculation (± min)',mFixed:'Fixed time',
   sDur:'Screen durations',hDur:'Adhan screen length, and the dimmed screen after each iqama (minutes).',
   sAlerts:'Alerts',fPre:'Alert before adhan (min)',fVol:'Volume',cChime:'Chime before adhan',cAdhan:'Play adhan at prayer time',cIqChime:'Chime at iqama',cSys:'System notifications (if allowed)',
   cNature:'Ambient nature sound (light breeze & birds)',fNatVol:'Nature sound volume',
@@ -1533,7 +1533,7 @@ const I18N={
   imported:'Settings imported — review, then save',badFile:'Invalid file',
   sOwner:'Owner section',bOwnerUnlock:'Unlock as owner',
   dashMonth:'Monthly prayer timetable',mtDay:'Day',mtHijri:'Hijri',
-  adsPubBadTok:'The pasted token looks incomplete or malformed — it should start with github_pat_ and be copied in full',adsPubLocalFile:'Publishing does not work while opening the file directly from your device (as in this screen) — open the live published site link and try publishing from there',sPublish:'Publish announcements to all screens (GitHub)',hPublish:'To make announcements appear on every device opening the link, the app uploads a small ads.json file to the same GitHub repository automatically. Enter the repository and an access token once, on this device only.',fGhRepo:'Repository (owner/repo)',fGhToken:'Access token (fine-grained — Contents: Read and write)',hGhToken:'The token is stored only on this device and never published. Create it on GitHub: Settings → Developer settings → Personal access tokens → Fine-grained → select this repository only with Contents: Read and write.',sAdsSync:'Sync to all screens',hAdsSync:'On save, the announcements file is published automatically if a token is set, and every open screen picks it up within minutes. Or copy the file and upload it manually as ads.json.',bAdsPublish:'Publish announcements now',bAdsCopy:'Copy ads.json',adsPubOk:'Published — all screens will update within minutes',adsPubErr:'Publish failed: ',adsPubNoToken:'Enter the repository and token in the “Owner” tab first, or copy the file and upload it manually',adsCopied:'ads.json content copied — upload it to the repository with the same name',adsRemoteOn:'Announcements shown now come from the published file (last sync: {t})',adsRemoteOff:'No published announcements file found — showing announcements saved on this device',
+  adsPubBadTok:'The pasted token looks incomplete or malformed — it should start with github_pat_ and be copied in full',adsPubLocalFile:'Publishing does not work while opening the file directly from your device (as in this screen) — open the live published site link and try publishing from there',sPublish:'Publish settings and announcements to all screens (GitHub)',hPublish:'To make manual adhan/iqama time overrides and announcements you set here appear on every device opening the link, the app uploads a small ads.json file to the same GitHub repository automatically. Enter the repository and an access token once, on this device only.',fGhRepo:'Repository (owner/repo)',fGhToken:'Access token (fine-grained — Contents: Read and write)',hGhToken:'The token is stored only on this device and never published. Create it on GitHub: Settings → Developer settings → Personal access tokens → Fine-grained → select this repository only with Contents: Read and write.',sAdsSync:'Sync to all screens',hAdsSync:'On save, a file with the manual adhan/iqama times and announcements is published automatically if a token is set, and every open screen picks it up within minutes. Or copy the file and upload it manually as ads.json.',bAdsPublish:'Publish updates now',bAdsCopy:'Copy ads.json',adsPubOk:'Published — all screens will update within minutes',adsPubErr:'Publish failed: ',adsPubNoToken:'Enter the repository and token in the “Owner” tab first, or copy the file and upload it manually',adsCopied:'ads.json content copied — upload it to the repository with the same name',adsRemoteOn:'What is shown now (manual times and announcements) comes from the published file (last sync: {t})',adsRemoteOff:'No published file found — showing settings saved on this device',
   tAds:'Announcements',sAds:'Mosque announcements',hAds:'Add notices about mosque activities (lecture, Quran circle, funeral prayer, donations…). They alternate with the duas in the bottom bar; each can have a date range.',cAdsOnly:'Show announcements only (hide duas while announcements are active)',sAdNew:'New announcement',fAdText:'Text',fAdFrom:'Starts (optional)',fAdTo:'Ends (optional)',bAdAdd:'Add announcement',adLabel:'Notice',adsEmpty:'No announcements yet.',dashAds:'Announcements',adOn:'On',bAdDel:'Delete',adExpired:'Expired',adUpcoming:'Upcoming',
   
   sWeather:'Weather',hWeather:'When enabled, the system contacts a free weather service (Open-Meteo) every 20 minutes using the mosque coordinates, and simulates clouds, rain, fog and wind in the scene. The scene still works offline in its usual look.',
@@ -1564,7 +1564,9 @@ const METHOD_KEYS={oman:'mOman',mwl:'mMwl',makkah:'mMakkah',gulf:'mGulf',egypt:'
 let S, storageOK=true;
 function merge(a,b){for(const k in b){const v=b[k];if(v&&typeof v==='object'&&!Array.isArray(v))a[k]=merge(a[k]&&typeof a[k]==='object'?a[k]:{},v);else if(v!==undefined)a[k]=v;}return a;}
 function loadSettings(){let saved=null;try{saved=JSON.parse(localStorage.getItem(KEY)||'null');}catch(e){storageOK=false;}S=merge(clone(DEFAULTS),saved||{});
-  if(!saved||(saved._calVer||0)<CAL_VERSION){if(!saved||(saved._calVer||0)<2){S.calc=clone(DEFAULTS.calc);S.iqama=clone(DEFAULTS.iqama);}if(!saved||(saved._calVer||0)<4)S.owner.bgMode='photos';if(!saved||(saved._calVer||0)<5)S.owner.weatherOn=true;if(!saved||(saved._calVer||0)<6)S.alerts.sysNotify=true;if(!saved||(saved._calVer||0)<7)S.display.hideDock=true;if(!saved||(saved._calVer||0)<8)S.display.autoFullscreen=false;if(!saved||(saved._calVer||0)<9)S.iqama.asr=clone(DEFAULTS.iqama.asr);if(!saved||(saved._calVer||0)<10)S.calc.adj=clone(DEFAULTS.calc.adj);if(!saved||(saved._calVer||0)<11){S.calc.adj=clone(DEFAULTS.calc.adj);S.iqama.fajr=clone(DEFAULTS.iqama.fajr);S.iqama.maghrib=clone(DEFAULTS.iqama.maghrib);S.display.hijriAdj=DEFAULTS.display.hijriAdj;}if(!saved||(saved._calVer||0)<12)S.iqama.fajr=clone(DEFAULTS.iqama.fajr);if(!saved||(saved._calVer||0)<13)S.display.h24=false;S._calVer=CAL_VERSION;saveSettings();}}
+  if(!saved||(saved._calVer||0)<CAL_VERSION){if(!saved||(saved._calVer||0)<2){S.calc=clone(DEFAULTS.calc);S.iqama=clone(DEFAULTS.iqama);}if(!saved||(saved._calVer||0)<4)S.owner.bgMode='photos';if(!saved||(saved._calVer||0)<5)S.owner.weatherOn=true;if(!saved||(saved._calVer||0)<6)S.alerts.sysNotify=true;if(!saved||(saved._calVer||0)<7)S.display.hideDock=true;if(!saved||(saved._calVer||0)<8)S.display.autoFullscreen=false;if(!saved||(saved._calVer||0)<9)S.iqama.asr=clone(DEFAULTS.iqama.asr);if(!saved||(saved._calVer||0)<10)S.calc.adj=clone(DEFAULTS.calc.adj);if(!saved||(saved._calVer||0)<11){S.calc.adj=clone(DEFAULTS.calc.adj);S.iqama.fajr=clone(DEFAULTS.iqama.fajr);S.iqama.maghrib=clone(DEFAULTS.iqama.maghrib);S.display.hijriAdj=DEFAULTS.display.hijriAdj;}if(!saved||(saved._calVer||0)<12)S.iqama.fajr=clone(DEFAULTS.iqama.fajr);if(!saved||(saved._calVer||0)<13)S.display.h24=false;
+    if(!saved||(saved._calVer||0)<14){const A=S.calc.adj||{};for(const e of EVENTS){if(!A[e]||typeof A[e]!=='object')A[e]={mode:'offset',v:+A[e]||0};}S.calc.adj=A;}
+    S._calVer=CAL_VERSION;saveSettings();}}
 function saveSettings(){try{localStorage.setItem(KEY,JSON.stringify(S));return true;}catch(e){storageOK=false;toast(t('errStorage'),'err');return false;}}
 const L=()=>S.display.lang==='en'?'en':'ar';
 function t(k,v){let s=(I18N[L()][k]??I18N.ar[k]??k);if(v)for(const x in v)s=s.replace('{'+x+'}',v[x]);return s;}
@@ -1596,12 +1598,15 @@ function dayNameText(base){const d=new Date(base+43200000);try{return digits(new
 
 /* ---------------- محرك الجدول اليومي ---------------- */
 const dayCache=new Map(); let calcError=null;
-function calcCfg(){return{lat:+S.loc.lat,lng:+S.loc.lng,tz:+S.loc.tz,elev:+S.loc.elev||0,method:S.calc.method,asr:+S.calc.asr,fajrAngle:+S.calc.fajrAngle,ishaAngle:+S.calc.ishaAngle,ishaMin:+S.calc.ishaMin||0,adj:S.calc.adj};}
+function calcCfg(){return{lat:+S.loc.lat,lng:+S.loc.lng,tz:+S.loc.tz,elev:+S.loc.elev||0,method:S.calc.method,asr:+S.calc.asr,fajrAngle:+S.calc.fajrAngle,ishaAngle:+S.calc.ishaAngle,ishaMin:+S.calc.ishaMin||0,adj:{}};} // التعديل (نسبي أو وقت ثابت) يُطبَّق يدوياً بعد الحساب الفلكي الخام، وليس داخله
 function readGood(){try{return JSON.parse(localStorage.getItem(GOOD)||'{}');}catch(e){return{};}}
 function storeGood(map){try{localStorage.setItem(GOOD,JSON.stringify(map));}catch(e){}}
+function applyAdj(e,rawMin){const rule=(S.calc.adj&&S.calc.adj[e])||{mode:'offset',v:0};
+  if(rule.mode==='fixed'){const fm=parseHM(rule.v);return fm==null?rawMin:fm;}
+  return rawMin+(+rule.v||0);}
 function minutesFor(p){
   const k=dkey(p);
-  try{const r=PT.compute(p,calcCfg());const mins={};for(const e of EVENTS)mins[e]=PT.toMin(r[e]);
+  try{const r=PT.compute(p,calcCfg());const mins={};for(const e of EVENTS)mins[e]=applyAdj(e,PT.toMin(r[e]));
     const g=readGood();g[k]=mins;const keys=Object.keys(g).sort();while(keys.length>21)delete g[keys.shift()];storeGood(g);
     return{mins,err:null};}
   catch(err){const g=readGood();return{mins:g[k]||null,err:err.message==='BAD_COORDS'?'errCoords':(g[k]?'errCalc':'errNone')};}
@@ -2240,9 +2245,9 @@ function swaySync(A,B){const a=document.getElementById('swA'),b=document.getElem
   const op=kb&&B?(+B.style.opacity||0):0;b.style.opacity=op;b.style.visibility=op>0?'':'hidden';}
 function skySway(s){
   const b=document.body,bg=document.getElementById('bg');if(!bg)return;
-  const ws=s&&s.ws!=null?+s.ws:null;
-  if(ws==null||!bgInfo.cycle||S.display.lite){b.classList.remove('swayon');return;}
-  const g=s.gust!=null?+s.gust:ws*1.4,amp=Math.min(3.4,.12+ws*.055+Math.max(0,g-ws)*.012),lean=-Math.max(-1,Math.min(1,SKYE.tgt.wx))*Math.min(.9,ws*.025);
+  if(!bgInfo.cycle||S.display.lite){b.classList.remove('swayon');return;}
+  const ws=s&&s.ws!=null?+s.ws:8.5; // نسيم خفيف افتراضي يبقي الأشجار حيّة بصرياً دائماً إلى أن تتوفر بيانات رياح فعلية
+  const g=s&&s.gust!=null?+s.gust:ws*1.4,amp=Math.min(3.4,.12+ws*.055+Math.max(0,g-ws)*.012),lean=-Math.max(-1,Math.min(1,SKYE.tgt.wx))*Math.min(.9,ws*.025);
   bg.style.setProperty('--sway',amp.toFixed(2));bg.style.setProperty('--lean',lean.toFixed(2));bg.style.setProperty('--flt',(amp*.35).toFixed(2));
   const d=(Math.round(Math.max(1.6,4.6-ws*.07)*5)/5).toFixed(1)+'s';if(bg.style.getPropertyValue('--swd')!==d)bg.style.setProperty('--swd',d);
   b.classList.add('swayon');
@@ -2441,8 +2446,10 @@ let feedHold=22000;
 function scheduleFeed(){clearTimeout(duaTimer);duaTimer=setTimeout(showDua,Math.max(22000,feedHold));}
 function showDua(){const el=$('#dua');if(!el)return;const list=feedItems();if(!list.length){scheduleFeed();return;}el.classList.add('fade');setTimeout(()=>{duaI=(duaI+1)%list.length;feedHold=22000;paintFeed(list[duaI]);el.classList.remove('fade');scheduleFeed();},1000);}
 function startDua(){clearTimeout(duaTimer);const list=feedItems();document.body.classList.toggle('nodua',!list.length);if(!list.length)return;duaI=duaI%list.length;feedHold=22000;paintFeed(list[duaI]);scheduleFeed();}
-function adsJSON(){return JSON.stringify({v:1,updated:new Date().toISOString(),ads:{onlyAds:!!(S.ads&&S.ads.onlyAds),items:((S.ads&&S.ads.items)||[]).map(it=>({text:it.text,from:it.from||'',to:it.to||'',on:it.on!==false}))}},null,1);}
-async function fetchRemoteAds(){if(!/^https?:$/.test(location.protocol))return;try{const u=new URL('ads.json',location.href);u.searchParams.set('v',Date.now());const r=await fetch(u,{cache:'no-store'});if(r.status===404){if(ADS_REMOTE){ADS_REMOTE=null;localStorage.removeItem('ibnomar.adsRemote');startDua();}return;}if(!r.ok)return;const j=await r.json();if(!j||!j.ads)return;const changed=JSON.stringify(j.ads)!==JSON.stringify(ADS_REMOTE&&ADS_REMOTE.ads);ADS_REMOTE={ads:j.ads,updated:j.updated||'',fetched:Date.now()};try{localStorage.setItem('ibnomar.adsRemote',JSON.stringify(ADS_REMOTE));}catch(e){}if(changed)startDua();const st=$('#adsSyncState');if(st&&$('#mSet').classList.contains('on'))st.textContent=adsSyncText();}catch(e){}}
+function adsJSON(){return JSON.stringify({v:2,updated:new Date().toISOString(),ads:{onlyAds:!!(S.ads&&S.ads.onlyAds),items:((S.ads&&S.ads.items)||[]).map(it=>({text:it.text,from:it.from||'',to:it.to||'',on:it.on!==false}))},times:{adj:S.calc.adj,iqama:S.iqama}},null,1);}
+async function fetchRemoteAds(){if(!/^https?:$/.test(location.protocol))return;try{const u=new URL('ads.json',location.href);u.searchParams.set('v',Date.now());const r=await fetch(u,{cache:'no-store'});if(r.status===404){if(ADS_REMOTE){ADS_REMOTE=null;localStorage.removeItem('ibnomar.adsRemote');startDua();}return;}if(!r.ok)return;const j=await r.json();if(!j||!j.ads)return;const changed=JSON.stringify(j.ads)!==JSON.stringify(ADS_REMOTE&&ADS_REMOTE.ads);ADS_REMOTE={ads:j.ads,updated:j.updated||'',fetched:Date.now()};try{localStorage.setItem('ibnomar.adsRemote',JSON.stringify(ADS_REMOTE));}catch(e){}if(changed)startDua();
+    if(j.times&&j.times.adj&&j.times.iqama){const nt=JSON.stringify(j.times),ot=JSON.stringify({adj:S.calc.adj,iqama:S.iqama});if(nt!==ot){S.calc.adj=j.times.adj;S.iqama=j.times.iqama;saveSettings();resetCache();try{updateSetPreview();}catch(e){}render(nowWall());}}
+    const st=$('#adsSyncState');if(st&&$('#mSet').classList.contains('on'))st.textContent=adsSyncText();}catch(e){}}
 function adsSyncText(){if(lastPubErr)return t('adsPubErr')+lastPubErr;return ADS_REMOTE?t('adsRemoteOn',{t:new Date(ADS_REMOTE.fetched||Date.now()).toLocaleTimeString(L()==='ar'?'ar-OM':'en-GB',{hour:'2-digit',minute:'2-digit'})}):t('adsRemoteOff');}
 function normRepo(x){let r=String(x||'').trim().replace(/^https?:\/\/(www\.)?github\.com\//i,'').replace(/\.git$/,'').replace(/^\/+|\/+$/g,'').replace(/\s+/g,'');
   const host=location.hostname||'';const isPages=/\.github\.io$/i.test(host);const owner=isPages?host.replace(/\.github\.io$/i,''):'';
@@ -2710,8 +2717,8 @@ function openSettings(tab){
   draft=clone(S);
   $('#tabs').innerHTML=TABS.map(([id,k])=>`<button role="tab" data-tab="${id}" aria-selected="false">${t(k)}</button>`).join('');
   $('#selMethod').innerHTML=Object.keys(METHOD_KEYS).map(m=>`<option value="${m}">${t(METHOD_KEYS[m])}</option>`).join('');
-  $('#adjGrid').innerHTML=EVENTS.map(e=>`<label class="f"><span>${t(e)}</span><input type="number" step="1" dir="ltr" data-k="calc.adj.${e}"></label>`).join('');
   $('#iqBody').innerHTML=[...PRAYERS,'jumua'].map(p=>`<tr><td>${t(p)}</td><td><select data-k="iqama.${p}.mode"><option value="offset">${t('mOffset')}</option><option value="fixed">${t('mFixed')}</option></select></td><td><input data-k="iqama.${p}.v" dir="ltr"></td><td class="prev" data-prev="${p}"></td></tr>`).join('');
+  $('#adjBody').innerHTML=EVENTS.map(e=>`<tr><td>${t(e)}</td><td><select data-k="calc.adj.${e}.mode"><option value="offset">${t('mCalc')}</option><option value="fixed">${t('mFixed')}</option></select></td><td><input data-k="calc.adj.${e}.v" dir="ltr"></td><td class="prev" data-prev-adj="${e}"></td></tr>`).join('');
   $('#durGrid').innerHTML=[['adhan','durAdhan'],...PRAYERS.map(p=>[p,p]),['jumua','jumua']].map(([k,l])=>`<label class="f"><span>${t(l)}</span><input type="number" min="1" max="60" dir="ltr" data-k="dur.${k}"></label>`).join('');
   $$('#mSet [data-k]').forEach(el=>{const v=getK(draft,el.dataset.k);if(el.type==='checkbox')el.checked=!!v;else el.value=v??'';el.classList.remove('bad');});
   $$('#mSet [data-i]').forEach(el=>el.textContent=t(el.dataset.i));
@@ -2757,14 +2764,17 @@ function validate(d){const er=[];const bad=(k,m)=>{er.push(m);const el=$(`#mSet 
   if(!(d.loc.lng>=-180&&d.loc.lng<=180)||d.loc.lng==='')bad('loc.lng',t('vLng'));
   if(!(d.loc.tz>=-12&&d.loc.tz<=14)||d.loc.tz==='')bad('loc.tz',t('vTz'));
   for(const p of [...PRAYERS,'jumua'])if(d.iqama[p].mode==='fixed'&&parseHM(d.iqama[p].v)==null)bad(`iqama.${p}.v`,t('vFixed'));
+  for(const e of EVENTS)if(d.calc.adj[e].mode==='fixed'&&parseHM(d.calc.adj[e].v)==null)bad(`calc.adj.${e}.v`,t('vFixed'));
   return er;}
 function updateSetPreview(){
   $('#customAngles').style.display=draft.calc.method==='custom'?'':'none';
   const now=nowWall(),p=partsOf(now),base=dayStart(p),friday=new Date(base).getUTCDay()===5;
   const saved=S;S=draft;let out='';
-  try{const r=PT.compute(p,calcCfg());out=t('prevCalc')+'<br>'+EVENTS.map(e=>`${t(e)}<b>${fmtHM(base+PT.toMin(r[e])*60000)}</b>`).join(' ');
-    PRAYERS.forEach(pr=>{const ad=base+PT.toMin(r[pr])*60000;const q=iqamaFor(pr,ad,base,friday);const c=$(`[data-prev="${pr}"]`);if(c)c.textContent=fmtHM(ad)+'  →  '+fmtHM(q.ms)+(q.fallback?' ⚠':'');});
-    const jc=$('[data-prev="jumua"]');if(jc){const ad=base+PT.toMin(r.dhuhr)*60000;jc.textContent=fmtHM(ad)+'  →  '+fmtHM(iqamaFor('dhuhr',ad,base,true).ms);}
+  try{const r=PT.compute(p,calcCfg());const eff={};
+    for(const e of EVENTS){const raw=base+PT.toMin(r[e])*60000;eff[e]=base+applyAdj(e,PT.toMin(r[e]))*60000;const rc=$(`[data-prev-adj="${e}"]`);if(rc)rc.textContent=fmtHM(raw)+'  →  '+fmtHM(eff[e]);}
+    out=t('prevCalc')+'<br>'+EVENTS.map(e=>`${t(e)}<b>${fmtHM(eff[e])}</b>`).join(' ');
+    PRAYERS.forEach(pr=>{const ad=eff[pr];const q=iqamaFor(pr,ad,base,friday);const c=$(`[data-prev="${pr}"]`);if(c)c.textContent=fmtHM(ad)+'  →  '+fmtHM(q.ms)+(q.fallback?' ⚠':'');});
+    const jc=$('[data-prev="jumua"]');if(jc){const ad=eff.dhuhr;jc.textContent=fmtHM(ad)+'  →  '+fmtHM(iqamaFor('dhuhr',ad,base,true).ms);}
   }catch(e){out='<span style="color:#f2a38e">'+t('errCoords')+'</span>';}
   S=saved;$('#calcPrev').innerHTML=out;
 }
