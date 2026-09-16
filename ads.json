@@ -1,16 +1,9 @@
 {
  "v": 2,
- "updated": "2026-09-16T21:01:33.553Z",
+ "updated": "2026-09-16T21:02:09.135Z",
  "ads": {
-  "onlyAds": true,
-  "items": [
-   {
-    "text": "محاضرة دينية",
-    "from": "2026-09-16",
-    "to": "2026-09-17",
-    "on": true
-   }
-  ]
+  "onlyAds": false,
+  "items": []
  },
  "times": {
   "adj": {
@@ -36,7 +29,7 @@
    },
    "isha": {
     "mode": "offset",
-    "v": 1
+    "v": -1
    }
   },
   "iqama": {
@@ -58,7 +51,7 @@
    },
    "isha": {
     "mode": "offset",
-    "v": 23
+    "v": 25
    },
    "jumua": {
     "mode": "offset",
