@@ -1,9 +1,9 @@
 {
  "v": 4,
- "rev": "r1k3cf82",
- "updated": "2026-09-17T11:43:54.339Z",
+ "rev": "rhretk5",
+ "updated": "2026-09-17T11:44:02.171Z",
  "ads": {
-  "onlyAds": true,
+  "onlyAds": false,
   "items": []
  },
  "times": {
@@ -171,7 +171,7 @@
    "bgMode": "photos"
   },
   "ads": {
-   "onlyAds": true,
+   "onlyAds": false,
    "items": []
   }
  }
