@@ -1,17 +1,9 @@
 {
- "v": 4,
- "rev": "r1mzdgv7",
- "updated": "2026-09-17T06:06:24.909Z",
+ "v": 3,
+ "updated": "2026-09-17T06:55:00.064Z",
  "ads": {
   "onlyAds": true,
-  "items": [
-   {
-    "text": "تعرفوا حد يبيع عوال",
-    "from": "2026-09-17",
-    "to": "2026-09-17",
-    "on": true
-   }
-  ]
+  "items": []
  },
  "times": {
   "adj": {
@@ -69,124 +61,5 @@
  },
  "fonts": {
   "fsClock": 1
- },
- "cfg": {
-  "mosque": {
-   "nameAr": "مسجد عبدالله بن عمر رضي الله عنهما",
-   "cityAr": "ولاية عبري",
-   "nameEn": "Abdullah bin Omar Mosque",
-   "cityEn": "Ibri, Oman"
-  },
-  "loc": {
-   "lat": 23.235624,
-   "lng": 56.517341,
-   "tz": 4,
-   "elev": 0
-  },
-  "calc": {
-   "method": "oman",
-   "asr": 1,
-   "fajrAngle": 18,
-   "ishaAngle": 18,
-   "ishaMin": 0,
-   "adj": {
-    "fajr": {
-     "mode": "offset",
-     "v": 0
-    },
-    "sunrise": {
-     "mode": "offset",
-     "v": 0
-    },
-    "dhuhr": {
-     "mode": "offset",
-     "v": 5
-    },
-    "asr": {
-     "mode": "offset",
-     "v": 6
-    },
-    "maghrib": {
-     "mode": "offset",
-     "v": 5
-    },
-    "isha": {
-     "mode": "offset",
-     "v": "-1"
-    }
-   }
-  },
-  "iqama": {
-   "fajr": {
-    "mode": "offset",
-    "v": 25
-   },
-   "dhuhr": {
-    "mode": "offset",
-    "v": 25
-   },
-   "asr": {
-    "mode": "fixed",
-    "v": "16:20"
-   },
-   "maghrib": {
-    "mode": "offset",
-    "v": 9
-   },
-   "isha": {
-    "mode": "offset",
-    "v": 25
-   },
-   "jumua": {
-    "mode": "offset",
-    "v": 30
-   }
-  },
-  "dur": {
-   "adhan": 4,
-   "fajr": 12,
-   "dhuhr": 10,
-   "asr": 10,
-   "maghrib": 8,
-   "isha": 10,
-   "jumua": 15
-  },
-  "display": {
-   "lang": "ar",
-   "theme": "auto",
-   "digits": "latin",
-   "h24": false,
-   "hijriAdj": -1,
-   "sunriseCountdown": true,
-   "hijriAfterMaghrib": false,
-   "dua": true,
-   "duaSpeed": 1
-  },
-  "alerts": {
-   "preMin": 5,
-   "chime": true,
-   "adhan": true,
-   "iqamaChime": true,
-   "sysNotify": true
-  },
-  "owner": {
-   "weatherOn": true,
-   "fsTable": 1.25,
-   "fsClock": 1,
-   "fsDua": 1.3,
-   "showSignature": true,
-   "bgMode": "photos"
-  },
-  "ads": {
-   "onlyAds": true,
-   "items": [
-    {
-     "text": "تعرفوا حد يبيع عوال",
-     "from": "2026-09-17",
-     "to": "2026-09-17",
-     "on": true
-    }
-   ]
-  }
  }
 }
