@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "r1if49hr",
- "updated": "2026-09-17T11:42:50.506Z",
+ "rev": "r1szv7i7",
+ "updated": "2026-09-17T11:43:37.388Z",
  "ads": {
   "onlyAds": true,
   "items": [
@@ -68,7 +68,7 @@
   }
  },
  "fonts": {
-  "fsClock": 1.1
+  "fsClock": 1.05
  },
  "cfg": {
   "mosque": {
@@ -172,7 +172,7 @@
   "owner": {
    "weatherOn": true,
    "fsTable": 1.25,
-   "fsClock": 1.1,
+   "fsClock": 1.05,
    "fsDua": 1.3,
    "showSignature": true,
    "bgMode": "photos"
