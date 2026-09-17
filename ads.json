@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "r1ngoj9p",
- "updated": "2026-09-17T08:36:08.786Z",
+ "rev": "rddbx5y",
+ "updated": "2026-09-17T09:30:53.521Z",
  "ads": {
   "onlyAds": true,
   "items": []
@@ -18,7 +18,7 @@
    },
    "dhuhr": {
     "mode": "offset",
-    "v": 5
+    "v": "6"
    },
    "asr": {
     "mode": "offset",
@@ -93,7 +93,7 @@
     },
     "dhuhr": {
      "mode": "offset",
-     "v": 5
+     "v": "6"
     },
     "asr": {
      "mode": "offset",
