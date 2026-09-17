@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "r1ngoj9p",
- "updated": "2026-09-17T05:35:57.703Z",
+ "rev": "rcfeg18",
+ "updated": "2026-09-17T05:45:15.042Z",
  "ads": {
   "onlyAds": true,
   "items": []
@@ -30,7 +30,7 @@
    },
    "isha": {
     "mode": "offset",
-    "v": "-1"
+    "v": "-2"
    }
   },
   "iqama": {
@@ -105,7 +105,7 @@
     },
     "isha": {
      "mode": "offset",
-     "v": "-1"
+     "v": "-2"
     }
    }
   },
