@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "rux369u",
- "updated": "2026-09-17T05:48:28.058Z",
+ "rev": "r1mzdgv7",
+ "updated": "2026-09-17T06:06:24.909Z",
  "ads": {
   "onlyAds": true,
   "items": [
@@ -37,7 +37,7 @@
    },
    "isha": {
     "mode": "offset",
-    "v": "-2"
+    "v": "-1"
    }
   },
   "iqama": {
@@ -112,7 +112,7 @@
     },
     "isha": {
      "mode": "offset",
-     "v": "-2"
+     "v": "-1"
     }
    }
   },
