@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "rddbx5y",
- "updated": "2026-09-17T09:30:53.521Z",
+ "rev": "rb7i8yt",
+ "updated": "2026-09-17T09:32:39.673Z",
  "ads": {
   "onlyAds": true,
   "items": []
@@ -160,7 +160,7 @@
    "chime": true,
    "adhan": true,
    "iqamaChime": true,
-   "sysNotify": true
+   "sysNotify": false
   },
   "owner": {
    "weatherOn": true,
