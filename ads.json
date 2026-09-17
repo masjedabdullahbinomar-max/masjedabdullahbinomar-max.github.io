@@ -1,9 +1,9 @@
 {
  "v": 4,
- "rev": "r1y62pk4",
- "updated": "2026-09-17T16:57:13.188Z",
+ "rev": "rrxde37",
+ "updated": "2026-09-17T16:57:18.783Z",
  "ads": {
-  "onlyAds": true,
+  "onlyAds": false,
   "items": []
  },
  "times": {
@@ -172,7 +172,7 @@
    "gmapsKey": ""
   },
   "ads": {
-   "onlyAds": true,
+   "onlyAds": false,
    "items": []
   }
  }
