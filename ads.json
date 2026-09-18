@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "r1u8k99y",
- "updated": "2026-09-18T21:39:30.492Z",
+ "rev": "r18jtn1b",
+ "updated": "2026-09-18T22:09:58.013Z",
  "ads": {
   "onlyAds": false,
   "items": []
@@ -169,7 +169,9 @@
    "fsDua": 1.45,
    "showSignature": true,
    "bgMode": "photos",
-   "gmapsKey": ""
+   "gmapsKey": "",
+   "sigMode": "text",
+   "sigText": ""
   },
   "ads": {
    "onlyAds": false,
