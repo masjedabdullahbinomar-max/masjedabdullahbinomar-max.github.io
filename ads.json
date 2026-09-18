@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "rrxde37",
- "updated": "2026-09-17T16:57:18.783Z",
+ "rev": "r1dzw3qu",
+ "updated": "2026-09-18T15:27:07.241Z",
  "ads": {
   "onlyAds": false,
   "items": []
@@ -167,7 +167,7 @@
    "fsTable": 1.25,
    "fsClock": 1.05,
    "fsDua": 1.3,
-   "showSignature": false,
+   "showSignature": true,
    "bgMode": "photos",
    "gmapsKey": ""
   },
