@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "r1dzw3qu",
- "updated": "2026-09-18T15:27:07.241Z",
+ "rev": "r1u8k99y",
+ "updated": "2026-09-18T21:39:30.492Z",
  "ads": {
   "onlyAds": false,
   "items": []
@@ -61,7 +61,7 @@
   }
  },
  "fonts": {
-  "fsClock": 1.05
+  "fsClock": 1.15
  },
  "cfg": {
   "mosque": {
@@ -164,9 +164,9 @@
   },
   "owner": {
    "weatherOn": true,
-   "fsTable": 1.25,
-   "fsClock": 1.05,
-   "fsDua": 1.3,
+   "fsTable": 1.4,
+   "fsClock": 1.15,
+   "fsDua": 1.45,
    "showSignature": true,
    "bgMode": "photos",
    "gmapsKey": ""
