@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "rsp1grt",
- "updated": "2026-09-18T22:13:57.329Z",
+ "rev": "r5si4kh",
+ "updated": "2026-09-18T22:15:50.015Z",
  "ads": {
   "onlyAds": false,
   "items": []
@@ -170,8 +170,8 @@
    "showSignature": true,
    "bgMode": "photos",
    "gmapsKey": "",
-   "sigMode": "text",
-   "sigText": "M.ALYAQOUBI"
+   "sigMode": "logo",
+   "sigText": ""
   },
   "ads": {
    "onlyAds": false,
