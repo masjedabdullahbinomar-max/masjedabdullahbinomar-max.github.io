@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "r5si4kh",
- "updated": "2026-09-18T22:15:50.015Z",
+ "rev": "rcosylc",
+ "updated": "2026-09-19T08:09:36.102Z",
  "ads": {
   "onlyAds": false,
   "items": []
@@ -18,7 +18,7 @@
    },
    "dhuhr": {
     "mode": "offset",
-    "v": "6"
+    "v": "5"
    },
    "asr": {
     "mode": "offset",
@@ -93,7 +93,7 @@
     },
     "dhuhr": {
      "mode": "offset",
-     "v": "6"
+     "v": "5"
     },
     "asr": {
      "mode": "offset",
