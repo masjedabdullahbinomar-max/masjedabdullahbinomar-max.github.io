@@ -1,10 +1,17 @@
 {
  "v": 4,
- "rev": "r173hzk0",
- "updated": "2026-09-19T08:14:31.179Z",
+ "rev": "r6ed9bz",
+ "updated": "2026-09-19T11:05:07.295Z",
  "ads": {
-  "onlyAds": false,
-  "items": []
+  "onlyAds": true,
+  "items": [
+   {
+    "text": "سوف يتم توقف البرنامج للصيانة مؤقتا",
+    "from": "2026-09-19",
+    "to": "2026-09-20",
+    "on": true
+   }
+  ]
  },
  "times": {
   "adj": {
@@ -174,8 +181,15 @@
    "sigText": ""
   },
   "ads": {
-   "onlyAds": false,
-   "items": []
+   "onlyAds": true,
+   "items": [
+    {
+     "text": "سوف يتم توقف البرنامج للصيانة مؤقتا",
+     "from": "2026-09-19",
+     "to": "2026-09-20",
+     "on": true
+    }
+   ]
   }
  }
 }
