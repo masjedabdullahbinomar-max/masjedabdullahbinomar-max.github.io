@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "rcosylc",
- "updated": "2026-09-19T08:09:36.102Z",
+ "rev": "r1yz8o9r",
+ "updated": "2026-09-19T08:11:39.470Z",
  "ads": {
   "onlyAds": false,
   "items": []
@@ -167,7 +167,7 @@
    "fsTable": 1.4,
    "fsClock": 1.15,
    "fsDua": 1.45,
-   "showSignature": true,
+   "showSignature": false,
    "bgMode": "photos",
    "gmapsKey": "",
    "sigMode": "logo",
