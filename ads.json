@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "r1yz8o9r",
- "updated": "2026-09-19T08:11:39.470Z",
+ "rev": "r173hzk0",
+ "updated": "2026-09-19T08:14:31.179Z",
  "ads": {
   "onlyAds": false,
   "items": []
@@ -164,7 +164,7 @@
   },
   "owner": {
    "weatherOn": true,
-   "fsTable": 1.4,
+   "fsTable": 1.3,
    "fsClock": 1.15,
    "fsDua": 1.45,
    "showSignature": false,
