@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "r9hxrxb",
- "updated": "2026-09-19T11:07:49.341Z",
+ "rev": "r1rtw8ae",
+ "updated": "2026-09-20T10:12:33.833Z",
  "ads": {
   "onlyAds": false,
   "items": []
@@ -18,7 +18,7 @@
    },
    "dhuhr": {
     "mode": "offset",
-    "v": "5"
+    "v": "6"
    },
    "asr": {
     "mode": "offset",
@@ -26,7 +26,7 @@
    },
    "maghrib": {
     "mode": "offset",
-    "v": 5
+    "v": "4"
    },
    "isha": {
     "mode": "offset",
@@ -93,7 +93,7 @@
     },
     "dhuhr": {
      "mode": "offset",
-     "v": "5"
+     "v": "6"
     },
     "asr": {
      "mode": "offset",
@@ -101,7 +101,7 @@
     },
     "maghrib": {
      "mode": "offset",
-     "v": 5
+     "v": "4"
     },
     "isha": {
      "mode": "offset",
@@ -146,7 +146,7 @@
   },
   "display": {
    "lang": "ar",
-   "theme": "auto",
+   "theme": "day",
    "digits": "latin",
    "h24": false,
    "hijriAdj": -1,
