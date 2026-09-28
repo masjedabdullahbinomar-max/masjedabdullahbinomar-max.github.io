@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "ra4g6rs",
- "updated": "2026-09-28T17:41:24.960Z",
+ "rev": "r1muddav",
+ "updated": "2026-09-28T17:48:04.468Z",
  "ads": {
   "onlyAds": false,
   "items": []
@@ -167,7 +167,7 @@
    "fsTable": 1.3,
    "fsClock": 1.15,
    "fsDua": 1.45,
-   "showSignature": false,
+   "showSignature": true,
    "bgMode": "photos",
    "gmapsKey": "",
    "sigMode": "logo",
