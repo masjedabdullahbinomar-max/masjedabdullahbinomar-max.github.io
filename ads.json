@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "r1muddav",
- "updated": "2026-09-28T17:48:04.468Z",
+ "rev": "r14yrc9e",
+ "updated": "2026-09-29T15:37:14.328Z",
  "ads": {
   "onlyAds": false,
   "items": []
@@ -43,8 +43,8 @@
     "v": 25
    },
    "asr": {
-    "mode": "fixed",
-    "v": "16:10"
+    "mode": "offset",
+    "v": 35
    },
    "maghrib": {
     "mode": "offset",
@@ -119,8 +119,8 @@
     "v": 25
    },
    "asr": {
-    "mode": "fixed",
-    "v": "16:10"
+    "mode": "offset",
+    "v": 35
    },
    "maghrib": {
     "mode": "offset",
