@@ -1,7 +1,7 @@
 {
  "v": 4,
- "rev": "r14yrc9e",
- "updated": "2026-09-29T15:37:14.328Z",
+ "rev": "r10w8243",
+ "updated": "2026-10-02T15:20:54.276Z",
  "ads": {
   "onlyAds": false,
   "items": []
@@ -44,7 +44,7 @@
    },
    "asr": {
     "mode": "offset",
-    "v": 35
+    "v": 34
    },
    "maghrib": {
     "mode": "offset",
@@ -120,7 +120,7 @@
    },
    "asr": {
     "mode": "offset",
-    "v": 35
+    "v": 34
    },
    "maghrib": {
     "mode": "offset",
